@@ -17,5 +17,9 @@ namespace SiliconDonuts.Controllers
         {
             return View();
         }
+        public IActionResult AllDonuts()
+        {
+            return View();
+        }
     }
 }
