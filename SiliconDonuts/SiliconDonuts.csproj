@@ -15,5 +15,9 @@
     <Folder Include="wwwroot\css\" />
     <Folder Include="wwwroot\lib\" />
     <Folder Include="wwwroot\images\" />
+    <Folder Include="Views\Shared\Donuts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Views\Shared\Donuts\" />
   </ItemGroup>
 </Project>
