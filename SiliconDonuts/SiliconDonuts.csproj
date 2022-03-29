@@ -15,9 +15,10 @@
     <Folder Include="wwwroot\css\" />
     <Folder Include="wwwroot\lib\" />
     <Folder Include="wwwroot\images\" />
-    <Folder Include="Views\Shared\Donuts\" />
+    <Folder Include="Views\Donut\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Views\Shared\Donuts\" />
+    <None Remove="Views\Donut\" />
   </ItemGroup>
 </Project>
