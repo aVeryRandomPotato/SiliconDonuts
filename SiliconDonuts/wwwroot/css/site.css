@@ -1,6 +1,6 @@
 ﻿body {
     padding-top: 0px;
-    background-image: url("/images/donuts_wallpaper_blue_tileable.png");
+    background: linear-gradient(rgba(200, 200, 200, 0.4), rgba(200, 200, 200, 0.4)), url("/images/donuts_wallpaper_blue_tileable.png");
     background-position: center;
     position: relative;
     font-family: 'Source Sans Pro', sans-serif;
@@ -9,6 +9,10 @@
 #logoimg{
     width: 250px;
     height: auto;
+}
+
+.donutpicture {
+    width: 200px;
 }
 
 
