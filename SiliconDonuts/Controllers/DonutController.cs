@@ -14,9 +14,18 @@ namespace SiliconDonuts.Controllers
     public class DonutController : Controller
     {
         // GET: /<controller>/
+
+        private readonly IDonutRepository _donutRepository;
+
+        public DonutController(IDonutRepository donutRepository)
+        {
+            donutRepository = _donutRepository;
+        }
+
         public IActionResult Index()
         {
             return View();
+
         }
         public IActionResult AllDonuts()
         {
