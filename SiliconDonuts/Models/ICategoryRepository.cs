@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace SiliconDonuts.Models
 {
-    public class ICategoryRepository
+    public interface ICategoryRepository
     {
         IEnumerable<Category> AllCategories{ get; }
     }
