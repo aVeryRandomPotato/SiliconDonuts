@@ -11,6 +11,12 @@ namespace SiliconDonuts.Models
         {
 
         }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseSqlite("Filename = ./donuts.sqlite");
+        }
+
         public DbSet<Donut> Donuts { get; set; }
         public DbSet<Category> Categories { get; set; }
 

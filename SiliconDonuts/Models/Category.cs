@@ -1,5 +1,8 @@
 ﻿using System;
+using Microsoft.EntityFrameworkCore;
+
 namespace SiliconDonuts.Models
+
 {
     public class Category
     {

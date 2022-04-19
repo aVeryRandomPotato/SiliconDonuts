@@ -8,6 +8,8 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.EntityFrameworkCore;
+using SiliconDonuts.Models;
 
 namespace SiliconDonuts
 {
@@ -23,6 +25,11 @@ namespace SiliconDonuts
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDbContext<ApplicationDbContext>(options => options.UseSqlite("Data Source = Donuts.db"));
+            
+            services.AddScoped<ICategoryRepository, CategoryRepository>();
+            services.AddScoped<IDonutRepository, DonutRepository>();
+
             services.AddControllersWithViews();
         }
 
