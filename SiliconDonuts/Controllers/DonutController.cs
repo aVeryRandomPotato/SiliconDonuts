@@ -19,7 +19,7 @@ namespace SiliconDonuts.Controllers
 
         public DonutController(IDonutRepository donutRepository)
         {
-            donutRepository = _donutRepository;
+            _donutRepository = donutRepository;
         }
 
         public IActionResult Index()

@@ -9,7 +9,7 @@ namespace SiliconDonuts.Models
         public int DonutId { get; set; }
 
         [Required]
-        public int Name { get; set; }
+        public string Name { get; set; }
 
         [Required]
         public decimal DonutPrice { get; set; }
