@@ -21,16 +21,12 @@ namespace SiliconDonuts.Models
         public string ImageUrl { get; set; }
 
         [Required]
-        public string Allergies { get; set; }
+        public string Allergens { get; set; }
 
         [Required]
         public bool IsAvailable { get; set; }
 
-        
         public bool DonutOfTheDay { get; set; }
 
-        public int CategoryId { get; set; }
-
-        public Category Category { get; set; }
     }
 }

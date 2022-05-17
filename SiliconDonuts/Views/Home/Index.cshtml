@@ -1,7 +1,38 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
+
 }
 
-<div class="text-center">
 
+<div id="logo">
+    
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-3">
+            <img src="~/images/silicon_donut_logo.jpeg" id="logoimg">
+        </div>
+
+        <div class="col-9">
+            <H1 id="hometitle">Silicon Donuts</h1>
+            <h4 id="homesubtitle">Fresh Baked Daily</h4>
+        </div>
+    </div>
+</div>
+
+<partial name="_Carousel"/>
+
+<div class="oneDonut">
+    <h2 class="DonutTitle">Plain Glazed Donut</h2>
+    <img src="https://i.ibb.co/rMrcKxy/glazed-donut.png" alt="glazed-donut" class="DonutImage" />
+    <p>$0.99</p>
+    <p class="DonutDescription">Our Classic Donut covered with Plain Glaze</p>
+</div>
+
+<div class="oneDonut">
+    <h2 class="DonutTitle">Chocolate Glazed Donut</h2>
+    <img src="https://i.ibb.co/9G2yGws/chocolate-donut.jpg" alt="chocolate-glazed-donut" class="DonutImage" />
+    <p>$0.99</p>
+    <p class="DonutDescription">Our Classic Donut covered with Chocolate Glaze</p>
 </div>

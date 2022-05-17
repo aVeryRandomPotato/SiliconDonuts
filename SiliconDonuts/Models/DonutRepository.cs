@@ -18,14 +18,14 @@ namespace SiliconDonuts.Models
         {
             get
             {
-                return _db.Donuts.Include(c => c.Category);
+                return _db.Donuts.Where(d => d.IsAvailable);
             }
         }
         public IEnumerable<Donut> DonutOfTheDay
         {
             get
             {
-                return _db.Donuts.Include(c => c.Category).Where(d => d.DonutOfTheDay);
+                return _db.Donuts.Where(d => d.DonutOfTheDay);
             }
         }
         public Donut getDonutById(int donutId)

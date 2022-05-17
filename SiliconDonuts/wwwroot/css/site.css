@@ -1,19 +1,60 @@
 ﻿body {
     padding-top: 0px;
-    background: linear-gradient(rgba(200, 200, 200, 0.3), rgba(200, 200, 200, 0.3)), url("/images/donuts_wallpaper_blue_tileable.png");
+    /*    background: linear-gradient(rgba(200, 200, 200, 0.3), rgba(200, 200, 200, 0.3)), url("/images/donuts_wallpaper_blue_tileable.png");
     background-position: center;
-    position: relative;
+    position: relative;*/
     font-family: 'Source Sans Pro', sans-serif;
+    background-color: #71bfd1;
 }
 
-#logoimg{
+#logoimg {
     width: 250px;
     height: auto;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#hometitle{
+    text-align: center;
+    font-size: 80px;
+    margin-top: 40px;
+}
+
+#homesubtitle {
+    text-align: center;
+    font-size: 30px;
 }
 
 .donutpicture {
     width: 200px;
 }
 
+.oneDonut{
+    
+}
 
-HOMEWORK: Create page for a page containing all donuts using controllers and html
+#carouselExampleIndicators{
+    margin: auto;
+}
+/*#background-color {
+    width: 75%;
+    height: 2000px;
+    position: absolute;
+    right: 13%;
+    opacity: 75%;
+    background-color: white;
+}*/
+.DonutTitle {
+    text-align: center;
+}
+
+.DonutDescription{
+    text-align: center;
+}
+
+.DonutImage{
+    padding-left: 12.5%;
+    width: 250px;
+    height: auto;
+}
