@@ -24,7 +24,12 @@ namespace SiliconDonuts.Controllers
 
         public IActionResult Index()
         {
-            return View();
+
+            HomeViewModel donutHomeView = new HomeViewModel
+            {
+                DonutOfTheDay = _donutRepository.DonutOfTheDay
+            };
+            return View(donutHomeView);
 
         }
         public IActionResult AllDonuts()

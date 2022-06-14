@@ -1,0 +1,20 @@
+﻿@model Donut
+
+<div class="img-thumbnail">
+    <img src="@Model.ImageUrl" class="DonutImage">
+
+    <div class="caption">
+        <h4 class="DonutPrice float-end">$@Model.DonutPrice</h4>
+        <h3>
+            <a asp-controller="Donut"
+               asp-action="Details"
+               asp-route-id="@Model.DonutId">@Model.Name</a>
+        </h3>
+
+        <div class="addToCart">
+            <p><a class="btn btn-secondary">Add to Cart</a></p>
+        </div>
+
+        <p>@Model.ShortDescription</p>
+    </div>
+</div>

@@ -30,6 +30,9 @@ namespace SiliconDonuts
             services.AddScoped<ICategoryRepository, CategoryRepository>();
             services.AddScoped<IDonutRepository, DonutRepository>();
 
+            services.AddSession();
+            services.AddHttpContextAccessor();
+
             services.AddControllersWithViews();
         }
 
@@ -50,6 +53,8 @@ namespace SiliconDonuts
             app.UseStaticFiles();
 
             app.UseRouting();
+
+            app.UseSession();
 
             app.UseAuthorization();
 

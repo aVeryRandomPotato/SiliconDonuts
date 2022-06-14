@@ -4,7 +4,7 @@
     background-position: center;
     position: relative;*/
     font-family: 'Source Sans Pro', sans-serif;
-    background-color: #71bfd1;
+    background-color: #88cad1;
 }
 
 #logoimg {
@@ -15,13 +15,15 @@
     margin-bottom: 20px;
 }
 
-#hometitle{
+#hometitle {
+    font-family: "Didot";
     text-align: center;
     font-size: 80px;
-    margin-top: 40px;
+    margin-top: 70px;
 }
 
 #homesubtitle {
+    font-family: "Didot";
     text-align: center;
     font-size: 30px;
 }
@@ -57,4 +59,38 @@
     padding-left: 12.5%;
     width: 250px;
     height: auto;
+}
+
+.col{
+    display: flex;
+    flex-direction: row;
+}
+
+.img-thumbnail{
+    width: 300px;
+    margin-right: 25px;
+}
+
+.img-thumbnail a {
+    font-size: 18px;
+}
+
+.DonutImage {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    text-align: center;
+}
+
+.img-thumbnail {
+    padding: 0;
+}
+
+.img-thumbnail .caption {
+    padding: 9px;
+    color: #333;
+}
+
+.img-thumbnail .DonutPrice{
+    margin-left: 20px;
 }
