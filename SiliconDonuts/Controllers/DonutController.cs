@@ -32,6 +32,7 @@ namespace SiliconDonuts.Controllers
             return View(donutHomeView);
 
         }
+
         public IActionResult AllDonuts()
         {
             DonutListViewModel donutListView = new DonutListViewModel();
@@ -39,6 +40,16 @@ namespace SiliconDonuts.Controllers
             donutListView.CurrentCategory = "Glazed";
 
             return View(donutListView);
+        }
+
+        public IActionResult Details(int id)
+        {
+            var donut = _donutRepository.getDonutById(id);
+
+            if (donut == null)
+                return NotFound();
+
+            return View(donut);
         }
     }
 }

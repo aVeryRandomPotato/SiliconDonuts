@@ -56,7 +56,6 @@
 }
 
 .DonutImage{
-    padding-left: 12.5%;
     width: 250px;
     height: auto;
 }
@@ -69,6 +68,12 @@
 .img-thumbnail{
     width: 300px;
     margin-right: 25px;
+}
+
+.thumbnail > img {
+    width: 50%;
+    height: 600px;
+    object-fit: cover;
 }
 
 .img-thumbnail a {
