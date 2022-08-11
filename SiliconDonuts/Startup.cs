@@ -29,6 +29,7 @@ namespace SiliconDonuts
             
             services.AddScoped<ICategoryRepository, CategoryRepository>();
             services.AddScoped<IDonutRepository, DonutRepository>();
+            services.AddScoped<ShoppingCart>();
 
             services.AddSession();
             services.AddHttpContextAccessor();

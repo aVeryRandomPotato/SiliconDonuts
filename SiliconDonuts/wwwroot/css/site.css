@@ -20,6 +20,13 @@
     text-align: center;
     font-size: 80px;
     margin-top: 70px;
+    margin-bottom: 30px;
+}
+
+#donutoftheday{
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-bottom: 20px;
 }
 
 #homesubtitle {
@@ -68,6 +75,7 @@
 .img-thumbnail{
     width: 300px;
     margin-right: 25px;
+    margin-bottom: 25px;
 }
 
 .thumbnail > img {

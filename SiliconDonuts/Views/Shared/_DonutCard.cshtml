@@ -12,7 +12,7 @@
         </h3>
 
         <div class="addToCart">
-            <p><a class="btn btn-secondary">Add to Cart</a></p>
+            <p><a class="btn btn-secondary" asp-controller="ShoppingCart" asp-action="addToCart" asp-route-donutId="@Model.DonutId">Add to Cart</a></p>
         </div>
 
         <p>@Model.ShortDescription</p>
